@@ -19,6 +19,10 @@ android {
     }
 }
 
+//单元测试
+repositories { jcenter() }
+dependencies { testCompile "org.mockito:mockito-core:2.9.0" }
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -26,7 +30,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'fm.jiecao:jiecaovideoplayer:5.5.2'//jcvd视频播放插件
+    compile 'fm.jiecao:jiecaovideoplayer:5.5.2'//jcvd(节操播放器)视频播放插件
     compile 'com.squareup.picasso:picasso:2.5.1'
     testCompile 'junit:junit:4.12'
 

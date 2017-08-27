@@ -1,9 +1,9 @@
 package utils;
 
+
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 /**
  * Created by Bridge on 2017/8/27.
@@ -21,5 +21,4 @@ public class CalculatorTest {
         int result = cal.add(a,b);
         Assert.assertEquals(result,3);
     }
-
 }
